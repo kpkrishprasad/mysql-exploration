@@ -1,0 +1,18 @@
+bash commands
+
+echo $PATH
+grep 
+|
+wc -l
+ps -ef
+chmod +x db-stop
+chmod 755 db-stop
+ls -l
+pwd
+cd /
+cd -
+type
+rm
+
+#!NAMEOFPROGRAM
+
