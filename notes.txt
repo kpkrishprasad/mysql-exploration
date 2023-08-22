@@ -19,6 +19,16 @@ cat
 mysql -u root
 #!/bin/bash 
 
+git branch dev
+git checkout dev
+git checkout -b dev
+git branch
+git branch -d dev
+git log
+git push origin HEAD
+
+
+read article on getting start on git
 
 #!NAMEOFPROGRAM
 
