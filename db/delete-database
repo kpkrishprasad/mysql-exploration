@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mysql -u root <<END
+DROP DATABASE IF EXISTS southwind;
+SHOW DATABASES;
+END
