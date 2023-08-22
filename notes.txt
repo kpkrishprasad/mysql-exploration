@@ -13,6 +13,12 @@ cd /
 cd -
 type
 rm
+cat
+
+
+mysql -u root
+#!/bin/bash 
+
 
 #!NAMEOFPROGRAM
 
