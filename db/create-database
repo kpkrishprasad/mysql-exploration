@@ -1,0 +1,10 @@
+#!/bin/bash 
+
+mysql -u root <<END
+CREATE DATABASE IF NOT EXISTS southwind;
+SHOW DATABASES;
+END
+
+
+
+ 
