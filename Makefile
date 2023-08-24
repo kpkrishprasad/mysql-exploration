@@ -4,6 +4,9 @@ db-start:
 db-create:
 	db/create-database
 	db/create-schema
+	db/insert-data
+
+
 
 db-delete:
 	db/delete-database
