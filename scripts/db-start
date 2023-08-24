@@ -1,3 +1,4 @@
 #!/bin/bash 
 
-nohup /usr/local/bin/mysqld_safe > /dev/null & 
+#nohup /usr/local/bin/mysqld_safe > /dev/null & 
+nohup /usr/local/bin/mysql.server start > /dev/null & 

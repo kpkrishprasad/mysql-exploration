@@ -5,6 +5,7 @@ grep
 |
 wc -l
 ps -ef
+ps -ef | grep mysql
 chmod +x db-stop
 chmod 755 db-stop
 ls -l
