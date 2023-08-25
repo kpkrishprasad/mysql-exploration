@@ -6,8 +6,6 @@ db-create:
 	db/create-schema
 	db/insert-data
 
-
-
 db-delete:
 	db/delete-database
 
