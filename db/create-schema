@@ -1,9 +1,17 @@
 #!/bin/bash 
 
-mysql -u root <<END
-    USE southwind;
-    SELECT DATABASE();   
-    SHOW TABLES;
+mysql -u root southwind <<END
+    
+    DROP TABLE products;
+    DROP TABLE suppliers;
+
+    CREATE TABLE IF NOT EXISTS suppliers (
+         supplierID  INT UNSIGNED  NOT NULL AUTO_INCREMENT, 
+         name        VARCHAR(30)   NOT NULL DEFAULT '', 
+         phone       CHAR(8)       NOT NULL DEFAULT '',
+         PRIMARY KEY (supplierID)
+    );
+
     CREATE TABLE IF NOT EXISTS products (
          productID    INT UNSIGNED  NOT NULL AUTO_INCREMENT,
          productCode  CHAR(3)       NOT NULL DEFAULT '',
@@ -12,6 +20,9 @@ mysql -u root <<END
          price        DECIMAL(7,2)  NOT NULL DEFAULT 99999.99,
          PRIMARY KEY  (productID)
     );
-    SHOW TABLES;
-    desc PRODUCTS;
+    
+    ALTER TABLE products ADD COLUMN supplierID INT UNSIGNED NOT NULL DEFAULT 0;
+
+    ALTER TABLE products
+       ADD FOREIGN KEY (supplierID) REFERENCES suppliers (supplierID);
 END
