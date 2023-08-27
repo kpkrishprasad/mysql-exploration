@@ -16,6 +16,6 @@ mysql -u root
 ## To-Do
 - database normalization
 - DDL vs DML 
-
+- ACID
 
 
